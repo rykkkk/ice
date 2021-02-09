@@ -15,48 +15,40 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  */
 public class Card {
 
-    Card() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Card() {
     }
 
-    public enum Suit {
-        HEARTS, DIAMONDS, SPADES, CLUBS
-    }
+    private String suit; //clubs, spades, diamonds, hearts
+    private int value;//1-13
 
-    public enum Value {
-        ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT,
-        NINE, TEN, JACK, QUEEN, KING
-    }
+    public static final String[] SUITS = {"Hearts", "Diamonds", "Spades",
+        "Clubs"};
 
-    private Suit suit; //clubs, spades, diamonds, hearts
-    private Value value;//1-13
-
-//    public static final String[] SUITS = {"Hearts", "Diamonds", "Spades",
-//        "Clubs"};
-
-    public Card(Suit suit, Value value) {
+    public static final int[] VALUES = new int[13];
+    
+    public Card(String suit, int value) {
         this.suit = suit;
         this.value = value;
     }
     
     //@return the suit
-    public Suit getSuit() {
+    public String getSuit() {
         return this.suit;
     }
 
     //@param suit the suit to set
-    public void setSuit(Suit suit) {
+    public void setSuit(String suit) {
         this.suit = suit;
     }
 
     
     //@return the value
-    public Value getValue() {
+    public int getValue() {
         return value;
     }
     
     //@param value the value to set
-    public void setValue(Value value) {
+    public void setValue(int value) {
         this.value = value;
     }
 
