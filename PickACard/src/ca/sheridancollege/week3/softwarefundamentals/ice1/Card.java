@@ -15,6 +15,10 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  */
 public class Card {
 
+    Card() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public enum Suit {
         HEARTS, DIAMONDS, SPADES, CLUBS
     }
