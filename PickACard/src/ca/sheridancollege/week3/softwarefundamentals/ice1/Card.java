@@ -19,15 +19,15 @@ public class Card {
     }
 
     private String suit; //clubs, spades, diamonds, hearts
-    private int value;//1-13
+    private String value;//1-13
 
     public static final String[] SUITS = {"Hearts", "Diamonds", "Spades",
         "Clubs"};
 
-    public static final String[] VALUES = {"Ace", "two", "three", "four", 
-        "five", "six", "seven", "eight", "nine", "ten", "Jack", "Queen","King"};
+    public static final String[] VALUES = {"Ace", "Two", "Three", "Four", 
+        "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen","King"};
     
-    public Card(String suit, int value) {
+    public Card(String suit, String value) {
         this.suit = suit;
         this.value = value;
     }
@@ -44,12 +44,12 @@ public class Card {
 
     
     //@return the value
-    public int getValue() {
+    public String getValue() {
         return value;
     }
     
     //@param value the value to set
-    public void setValue(int value) {
+    public void setValue(String value) {
         this.value = value;
     }
 
