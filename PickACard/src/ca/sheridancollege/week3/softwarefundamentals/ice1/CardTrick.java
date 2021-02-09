@@ -1,7 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Krista Ryk
+ * 99146369
+ * Feb 8 2021
  */
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 
