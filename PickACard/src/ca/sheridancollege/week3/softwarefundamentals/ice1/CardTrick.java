@@ -67,7 +67,8 @@ public class CardTrick {
         
         System.out.println("\nYou have chosen the " + user.getValue() + " of " 
                 + user.getSuit() + "!");
-                
+       
+        //check results         
        if (user.getSuit().equals(c.getSuit()) &&
                user.getValue().equals(c.getValue())){ 
          
@@ -78,9 +79,9 @@ public class CardTrick {
                    + " hand :( Feel free to try again!");
        }
         
+        Card luckyCard = new Card(Card.SUITS[1], Card.VALUES[12]);
         
         
-        //Then report the result here
     }
 
 }
