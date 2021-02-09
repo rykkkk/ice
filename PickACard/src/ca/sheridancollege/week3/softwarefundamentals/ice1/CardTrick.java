@@ -51,35 +51,20 @@ public class CardTrick {
         for (int i = 0; i < Card.VALUES.length; i++) {
             System.out.println("  " + (i + 1) + ": " + Card.VALUES[i]);
         }
+      
+        Card luckyCard = new Card(Card.SUITS[1], Card.VALUES[12]);
 
-        //ask the user for Card value and suit, create their card
-        System.out.print("\nEnter suit (1-4): ");
-        Scanner input = new Scanner(System.in);
-        int userSuit = input.nextInt() - 1;
-        
-        System.out.print("Enter value (1-13): ");
-        Scanner i = new Scanner(System.in);
-        int userValue = input.nextInt() - 1; 
-        
-        // and search magicHand here
-        
-        Card user = new Card(Card.SUITS[userSuit], Card.VALUES[userValue]);
-        
-        System.out.println("\nYou have chosen the " + user.getValue() + " of " 
-                + user.getSuit() + "!");
-       
-        //check results         
-       if (user.getSuit().equals(c.getSuit()) &&
-               user.getValue().equals(c.getValue())){ 
+        // and search magicHand for luckyCard here         
+       if (luckyCard.getSuit().equals(c.getSuit()) &&
+               luckyCard.getValue().equals(c.getValue())){ 
          
-           System.out.println("Congratulations! You picked a card from the"
-                   + " Magic hand! ");
+           System.out.println("\nCongratulations! The special Lucky Card was in "
+                   + "the Magic Hand! You win!");
        }else{
-           System.out.println("No match! Sorry your card was not in the magic"
-                   + " hand :( Feel free to try again!");
+           System.out.println("\nNo match! Sorry your card was not lucky "
+                   + ":(  Feel free to try again!");
        }
         
-        Card luckyCard = new Card(Card.SUITS[1], Card.VALUES[12]);
         
         
     }
