@@ -36,7 +36,8 @@ public class CardTrick {
             int valRand = (int)(Math.random() * 13);
             int suitRand = (int)(Math.random() * 4);
 
-            c.setValue(Card.VALUES[valRand]);
+          
+            c.setValue(valRand);
             c.setSuit(Card.SUITS[suitRand]);//4 suitcs
             magicHand[i] = c;
         }

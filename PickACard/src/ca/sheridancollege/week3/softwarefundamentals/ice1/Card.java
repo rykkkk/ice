@@ -24,7 +24,8 @@ public class Card {
     public static final String[] SUITS = {"Hearts", "Diamonds", "Spades",
         "Clubs"};
 
-    public static final int[] VALUES = new int[13];
+    public static final String[] VALUES = {"Ace", "two", "three", "four", 
+        "five", "six", "seven", "eight", "nine", "ten", "Jack", "Queen","King"};
     
     public Card(String suit, int value) {
         this.suit = suit;
